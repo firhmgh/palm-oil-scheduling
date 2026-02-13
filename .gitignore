@@ -1,0 +1,9 @@
+__pycache__/
+*_pycache_/
+logs/
+trained_models/
+*.npy
+*.pt
+*.csv
+*.png
+training_log_*.txt

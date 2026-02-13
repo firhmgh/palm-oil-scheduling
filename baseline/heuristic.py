@@ -2,12 +2,15 @@ import numpy as np
 
 def fifo_policy(blocks):
     """
-    Pilih blok dengan buah siap panen terbanyak
+    Heuristik 1: Pilih blok pertama yang memiliki buah (FIFO berdasarkan urutan blok)
     """
-    return np.argmax([b['ready_fruit'] for b in blocks])
+    for i, b in enumerate(blocks):
+        if b['ready_fruit'] > 0:
+            return i
+    return 0 # Default ke blok 0 jika semua kosong
 
 def oldest_first(blocks):
     """
-    Pilih blok tertua
+    Heuristik 2: Pilih blok dengan umur (age) tertua (Prioritas Rendemen)
     """
-    return np.argmax([b['age'] for b in blocks])
+    return int(np.argmax([b['age'] for b in blocks]))

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Penjadwalan Kelapa Sawit | Portfolio Profesional</title>
+    <meta name="description" content="Sistem simulasi dan penjadwalan berbasis komputasi untuk optimasi operasional industri kelapa sawit, menunjukkan kemampuan perancangan arsitektur sistem dan logika bisnis kompleks.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">POS-<span>SIM</span></div>
+            <ul class="nav-links">
+                <li><a href="#masalah">Masalah</a></li>
+                <li><a href="#solusi">Solusi</a></li>
+                <li><a href="#arsitektur">Arsitektur</a></li>
+                <li><a href="#hasil">Hasil</a></li>
+                <li><a href="https://github.com/firhmgh/palm-oil-scheduling" class="btn-outline" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="badge">Optimasi Operasional Berbasis Simulasi</div>
+            <h1>Optimasi Penjadwalan Operasional Kelapa Sawit</h1>
+            <p class="hero-subtitle">Sistem simulasi dan penjadwalan komputasi untuk mengurangi inefisiensi logistik dan pemrosesan TBS di industri kelapa sawit menggunakan pendekatan constraint satisfaction dan simulasi agent-based.</p>
+            <div class="hero-cta">
+                <a href="#solusi" class="btn-primary">Lihat Detail Teknis</a>
+                <a href="https://github.com/firhmgh/palm-oil-scheduling" class="btn-secondary" target="_blank">Buka Repository</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Masalah -->
+    <section id="masalah" class="section-padding dark-bg">
+        <div class="container grid-2">
+            <div>
+                <h2 class="section-title">Tantangan Operasional</h2>
+                <p>Industri kelapa sawit menghadapi kendala kritis "Golden Hour": TBS harus diproses dalam 24 jam pasca-panen untuk mencegah peningkatan asam lemak bebas (FFA) yang menurunkan kualitas minyak.</p>
+                <ul class="list-tech">
+                    <li><strong>Perishability:</strong> Degradasi kualitas non-linear.</li>
+                    <li><strong>Kontensi Sumber Daya:</strong> Kapasitas pabrik terbatas vs lonjakan panen.</li>
+                    <li><strong>Kompleksitas Logistik:</strong> Rute armada heterogen di medan bervariasi.</li>
+                </ul>
+            </div>
+            <div class="stat-card">
+                <div class="stat-item">
+                    <span class="stat-val">25-35%</span>
+                    <span class="stat-label">Potensi Pemborosan akibat Kemacetan Pabrik</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-val">12+</span>
+                    <span class="stat-label">Variabel Interdependen per Jadwal</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solusi -->
+    <section id="solusi" class="section-padding">
+        <div class="container">
+            <div class="center-text">
+                <h2 class="section-title">Pendekatan Algoritmik</h2>
+                <p>Mengembangkan engine optimasi hybrid yang menyeimbangkan efisiensi komputasi dan kelayakan operasional.</p>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <i data-lucide="cpu"></i>
+                    <h3>Algoritma Heuristik</h3>
+                    <p>Pencarian global untuk urutan panen-ke-pabrik optimal, meminimalkan waktu tunggu keseluruhan.</p>
+                </div>
+                <div class="card">
+                    <i data-lucide="git-branch"></i>
+                    <h3>Validasi Constraint</h3>
+                    <p>Constraint keras untuk jadwal maintenance pabrik, jam kerja sopir, dan kapasitas kendaraan.</p>
+                </div>
+                <div class="card">
+                    <i data-lucide="bar-chart-3"></i>
+                    <h3>Simulasi Stokastik</h3>
+                    <p>Monte Carlo untuk uji ketahanan jadwal terhadap gangguan cuaca dan kegagalan peralatan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arsitektur -->
+    <section id="arsitektur" class="section-padding dark-bg">
+        <div class="container">
+            <h2 class="section-title">Arsitektur Sistem</h2>
+            <div class="arch-container">
+                <div class="image-placeholder">
+                    <img src="assets/images/architecture.png" alt="Diagram arsitektur berlapis sistem penjadwalan kelapa sawit" onerror="this.src='https://via.placeholder.com/1000x500/1e293b/ffffff?text=Diagram+Arsitektur+Sistem+Penjadwalan+Kelapa+Sawit'">
+                </div>
+                <div class="grid-3 mt-4">
+                    <div class="arch-step">
+                        <h4>Input Data</h4>
+                        <p>Data lapangan, constraint, dan parameter sumber daya dari perkebunan dan pabrik.</p>
+                    </div>
+                    <div class="arch-step">
+                        <h4>Core Simulasi</h4>
+                        <p>Engine Python dengan modul agents, environment, dan baseline algoritma.</p>
+                    </div>
+                    <div class="arch-step">
+                        <h4>Output & Evaluasi</h4>
+                        <p>Metrik performa, visualisasi hasil, dan dukungan keputusan what-if.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hasil Simulasi -->
+    <section id="hasil" class="section-padding">
+        <div class="container grid-2 align-center">
+            <div class="image-placeholder">
+                <img src="assets/images/performance-metrics.png" alt="Grafik metrik performa simulasi sebelum dan sesudah optimasi" onerror="this.src='https://via.placeholder.com/600x400/1e293b/ffffff?text=Grafik+Metrik+Performa+Simulasi'">
+            </div>
+            <div>
+                <h2 class="section-title">Hasil Simulasi</h2>
+                <p>Model menunjukkan peningkatan signifikan dibandingkan pendekatan FIFO tradisional pada seluruh indikator kunci.</p>
+                <div class="metric-row">
+                    <div class="metric-box">
+                        <span class="m-val">-28%</span>
+                        <span class="m-label">Durasi Antrian TBS</span>
+                    </div>
+                    <div class="metric-box">
+                        <span class="m-val">+18%</span>
+                        <span class="m-label">Throughput Pabrik</span>
+                    </div>
+                </div>
+                <p class="insight-text"><strong>Insight Utama:</strong> Dengan menggeser 18% logistik ke jendela malam, kemacetan pagi di jembatan timbang dapat dihilangkan sepenuhnya.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="section-padding dark-bg">
+        <div class="container center-text">
+            <h2 class="section-title">Teknologi yang Digunakan</h2>
+            <div class="tech-icons">
+                <span class="tech-tag">Python 3.10+</span>
+                <span class="tech-tag">NumPy & Pandas</span>
+                <span class="tech-tag">Gym (Environment Simulasi)</span>
+                <span class="tech-tag">Heuristic / Baseline Algoritma</span>
+                <span class="tech-tag">Streamlit (Dashboard Prototyping)</span>
+                <span class="tech-tag">Git & GitHub</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dampak -->
+    <section class="section-padding impact-section">
+        <div class="container">
+            <h2 class="section-title">Dampak Sistem</h2>
+            <div class="grid-3">
+                <div class="impact-card">
+                    <h3>Pengurangan Biaya Operasional</h3>
+                    <p>Mengurangi konsumsi bahan bakar melalui rute truk optimal dan pengurangan waktu idle.</p>
+                </div>
+                <div class="impact-card">
+                    <h3>Jaminan Kualitas</h3>
+                    <p>Mengurangi persentase FFA dengan memastikan 95%+ TBS diproses dalam 18 jam.</p>
+                </div>
+                <div class="impact-card">
+                    <h3>Skalabilitas</h3>
+                    <p>Dirancang untuk menangani beberapa pabrik dan perkebunan secara simultan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container center-text">
+            <h2>Siap mengoptimalkan operasi Anda?</h2>
+            <p>Lihat kode lengkap dan dokumentasi di GitHub.</p>
+            <a href="https://github.com/firhmgh/palm-oil-scheduling" class="btn-primary" target="_blank">Buka Repository GitHub</a>
+            <p class="copyright">© 2026 Sistem Penjadwalan Kelapa Sawit. Dikembangkan oleh Maghfirah.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
